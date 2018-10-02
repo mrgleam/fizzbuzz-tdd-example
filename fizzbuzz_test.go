@@ -1,6 +1,8 @@
 package fizzbuzz
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestFizzBuzz(t *testing.T) {
 	tests := []struct {
@@ -13,4 +15,8 @@ func TestFizzBuzz(t *testing.T) {
 			t.Fatalf("%s FizzBuzz(%s) = %v, want %v", test.testcase, test.number, result, test.expected)
 		}
 	}
+}
+
+func FizzBuzz(number string) string {
+	return number
 }
