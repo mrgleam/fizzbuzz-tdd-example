@@ -16,7 +16,3 @@ func TestFizzBuzz(t *testing.T) {
 		}
 	}
 }
-
-func FizzBuzz(number string) string {
-	return number
-}
