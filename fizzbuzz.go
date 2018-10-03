@@ -1,7 +1,10 @@
 package fizzbuzz
 
+import "strconv"
+
 func FizzBuzz(number string) string {
-	if number == "3" || number == "6" {
+	realNumber, _ := strconv.Atoi(number)
+	if realNumber%3 == 0 {
 		return "Fizz"
 	}
 	return number
