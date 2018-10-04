@@ -12,6 +12,7 @@ func TestFizzBuzz(t *testing.T) {
 		{"input 3 should Fizz", "3", "Fizz"},
 		{"input 6 should Fizz", "6", "Fizz"},
 		{"input 9 should Fizz", "9", "Fizz"},
+		{"input 5 should Buzz", "5", "Buzz"},
 	}
 	for _, test := range tests {
 		if result := FizzBuzz(test.number); result != test.expected {
